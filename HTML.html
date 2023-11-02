@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <title >Quiz App</title>
+</head>
+<body id="body">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg nav-color mt-2 ">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#"><img src="Images/IMG_1.jpg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+              
+                <li class="nav-item me-4 ms-4 me-xl-5">
+                <a class="nav-link active " aria-current="page" href="index.html"><strong>Home</strong></a>
+              </li>
+              
+              <li class="nav-item me-4 ms-4 me-xl-5 ms-xl-5">
+                <a class="nav-link active" href="index.html"><strong>Topic</strong></a>
+              </li>
+              
+              
+              <li class="nav-item me-4 ms-4 me-xl-5 ms-xl-5">
+                <a class="nav-link active" href="#"><strong>History</strong></a>
+              </li>
+
+              <li class="nav-item  ms-4   ms-xl-5 ">
+                <a class="nav-link active" href="#"><strong>About us</strong></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-3 ms-4  w-100 border-3 border-dark rounded-pill" type="search" placeholder="Search" aria-label="Search">
+              <button class="butn-search me-lg-5 me-3" type="submit"><strong>Search</strong></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+    <!-- Question -->
+<div class="main-div2">
+
+  <p id="timer">
+      
+  </p>
+
+    <p class="ques-num">
+        <em id="num">
+        </em>
+    </p>
+    <p id="ques">
+    </p>
+
+    <div class="ques-div">
+        <input onclick="selects()" type="radio" name="answer" id="input1" value="1">
+        <label for="input1" class="opt" id="opt1"></label>
+
+        <br>
+
+        <input onclick="selects()" type="radio" name="answer" id="input2" value="2">
+        <label for="input2" class="opt" id="opt2"></label>
+    
+        <br>
+    
+        <input onclick="selects()" type="radio" name="answer" id="input3" value="3">
+        <label for="input3" class="opt" id="opt3"></label>
+    
+        <br>
+        
+        <input onclick="selects()" type="radio" name="answer" id="input4" value="4">
+        <label for="input4" class="opt" id="opt4"></label>
+    
+    </div>
+
+    <button  onclick="nextQues()" id="NextBtn" class="butn-next">Next</button>
+    <button class="butn-next">
+        <a class="nav-link" href="index.html">Restart</a></button>
+</div>
+
+    <script src="app.js"></script>
+  <script src="./bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</body>
+</html>
